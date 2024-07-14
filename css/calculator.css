@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+*:before, *, *:after {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-family: "Arial", sans-serif, monospace;
+}
+
+body {
+	background-color: #2D2D2D;
+	font-family: "Roboto";
+	padding-top: 60px;
+	min-width: 200px;
+}
+
+div.calculator {
+	max-width: 220px;
+	width: 100%;
+	margin: 0 auto;
+	border-radius: 5px;
+	overflow: hidden;
+}
+
+div.calculator .display,
+div.calculator .mainboard,
+div.calculator .functions {
+	display: inline-block;
+	vertical-align: top;
+}
+
+div.calculator .display {
+	width: 100%;
+	background-color: #FFFFFF;
+	min-height: 40px;
+	text-align: right;
+	font-family: "Roboto";
+	font-size: 20px;
+	line-height: 40px;
+	padding: 0 10px;
+}
+
+div.calculator .mainboard {
+	width: 66.67%;
+	background-color: #424242;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+	box-shadow: -3px 3px 10px -1px rgba(0,0,0,0.4) inset;
+}
+
+div.calculator .functions {
+	width: 33.3333%;
+	background-color: #46ffac;
+	color: #1f6f4b;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+}
+
+div.calculator span.button {
+	width: 100%;
+	display: inline-block;
+	padding: 4px;
+	color: #FFFFFF;
+	text-align: center;
+	line-height: 38px;
+	cursor: pointer;
+	background-color: rgba(255,255,255,0);
+	-webkit-transition: background-color 0.1s ease-out;
+	-moz-transition: background-color 0.1s ease-out;
+	-o-transition: background-color 0.1s ease-out;
+	transition: background-color 0.1s ease-out;
+}
+
+div.calculator span.button:hover {
+	background-color: rgba(255,255,255,0.1);
+}
+
+div.calculator span.button:active {
+	background-color: rgba(255,255,255,0.4);
+}
+
+div.calculator .functions span.button {
+	color: #1f6f4b;
+}
+
+div.calculator .functions span.button:hover {
+	background-color: rgba(38, 139, 94, 0.1);
+}
+
+div.calculator .functions span.button:active {
+	background-color: rgba(38, 139, 94, 0.4);
+}
+
+div.calculator span.button.w-2 {
+	max-width: 50%;
+}
+
+div.calculator span.button.w-3 {
+	max-width: 33.3333%;
+}
